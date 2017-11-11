@@ -1,27 +1,39 @@
 <!DOCTYPE>
 <html>
+
 <head>
   <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+    function down() {
+      var a = document.getElementById('dropdown');
+      if (a.style.display == 'none')
+        a.style.display = 'block'
+      else
+      if (a.style.display == 'block')
+        a.style.display = 'none';
+    };
+  </script>
 </head>
+
 <body>
   <div class="wrapper">
     <header class="header-wrapper">
       <nav>
-        <a href="index.html"><img height="50" src="img/logo.png" alt="site_logo" </a>
+        <a href="index.html"><img height="50" src="img/logo.png" alt="site_logo"  /></a>
         <ul class="menu-top">
           <li><a href="page1">page1</a></li>
           <li><a href="page2">page2</a></li>
           <li><a href="page3">page3</a></li>
         </ul>
       </nav>
-      <div>
-        <img width="45"; height="45" src="img/overwatch.png"/>
-        <ul>
-          <li>1`</li>
-          <li>2`</li>
-          <li>3`</li>
+      <div class="droplink">
+        <a onclick="down()"><img class="active" class="pictures" width="45" ; height="45" src="img/overwatch.png" /></a>
+        <ul id="dropdown" style="display:none">
+          <li><a href="#">Профиль</a></li>
+          <li><a href="/#">Настройки</a></li>
+          <li><a href="/#">Выйти</a></li>
         </ul>
       </div>
     </header>
@@ -41,4 +53,5 @@
     </footer>
   </div>
 </body>
+
 </html>

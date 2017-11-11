@@ -35,8 +35,9 @@ nav a {
 
 nav img {
   margin: auto;
-  padding: 10px;
-  padding-right: 100px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 90px;
 }
 
 nav ul {
@@ -57,11 +58,34 @@ nav li {
   padding: 20px;
 }
 
-.menu-top li.active {
-  color: rgb(157, 31, 213);
+img.pictures {
+  padding-top: 10px;
+/*  padding-bottom: 10px;*/
 }
 
-.div.header.div img {
-  padding-top: 10px;
-  padding-right: -20px;
+img.active :active {
+  position: absolute;
+}
+.droplink li {
+  display:block;
+}
+
+.droplink ul {
+  padding:0;
+  margin:0;
+}
+
+.droplink li a{
+  padding:3px 10px 4px 32px;
+  margin:1px;
+  display:block;
+  color:#000;
+  text-decoration: none;
+  font-size:12px;
+  background-repeat:no-repeat;
+  background-position: 10px 3px;
+}
+
+.droplink li a:hover {
+  background-color: #999;
 }
