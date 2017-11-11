@@ -10,10 +10,10 @@
 }
 
 .header-wrapper {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: baseline;
   background: #ba4c11;
   height: 60px;
 }
@@ -25,4 +25,34 @@
 
 .wrapper2 {
   height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav img {
+  margin:auto;
+  padding: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style-position: inside;
+  font: 14px, 'Osvald', sans-serif;
+  padding: 10px;
+}
+
+.menu li {
+  display: inline-flex;
+  padding: 10px 30px;
+  margin: 0;
+}
+
+.menu li.active {
+  color: rgb(247, 28, 10);
 }
