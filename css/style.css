@@ -63,8 +63,8 @@ img.pictures {
 /*  padding-bottom: 10px;*/
 }
 
-img.active :active {
-  position: absolute;
+a.active img:active {
+  position: static;
 }
 .droplink li {
   display:block;
